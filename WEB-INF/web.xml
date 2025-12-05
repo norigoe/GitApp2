@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <!-- /inputtest → /input.jsp -->
+    <servlet>
+        <servlet-name>inputtest</servlet-name>
+        <jsp-file>/input.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputtest</servlet-name>
+        <url-pattern>/inputtest</url-pattern>
+    </servlet-mapping>
+
+    <!-- /registtest → RegistTestServlet -->
+    <servlet>
+        <servlet-name>registtest</servlet-name>
+        <servlet-class>RegistTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registtest</servlet-name>
+        <url-pattern>/registtest</url-pattern>
+    </servlet-mapping>
+
+    <!-- /registresult → /registresult.jsp -->
+    <servlet>
+        <servlet-name>registresult</servlet-name>
+        <jsp-file>/registresult.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registresult</servlet-name>
+        <url-pattern>/registresult</url-pattern>
+    </servlet-mapping>
+
+</web-app>
